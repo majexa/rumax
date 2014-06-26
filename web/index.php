@@ -1,7 +1,7 @@
 <?
 
 define('SITE_TITLE', 'Rumax');
-define('SITE_DOMAIN', 'rumax.june.majexa.ru');
+define('SITE_DOMAIN', 'rumax.june2.majexa.ru');
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
