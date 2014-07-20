@@ -1,7 +1,7 @@
 <?php
 
-try {
-  (new Image)->resizeAndSave(__DIR__.'/web/captures/1.png', __DIR__.'/web/captures/11.png', 340, 220);
-  if (($client = (new WsClient('localhost', 9000))->connect(false)) !== false) $client->sendData('capture:/captures/11.png');
-} catch (Exception $e) {}
+//$id = Misc::checkEmpty($_SERVER['argv'][2], 'param #2 (id) is required');
+//(new Image)->resizeAndSave(__DIR__.'/web/captures/'.$id.'.png', __DIR__.'/web/captures/'..'.png', 340, 220);
+//if (($client = (new WsClient('localhost', 9000))->connect(false)) !== false) $client->sendData('capture:/captures/11.png');
+
 
