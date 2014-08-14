@@ -1,7 +1,9 @@
 <?
 
 define('SITE_TITLE', 'Rumax');
-define('SITE_DOMAIN', 'rumax.june2.majexa.ru');
+define('NGN_ENV_PATH', dirname(dirname(__DIR__)));
+$r = require NGN_ENV_PATH.'/config/server.php';
+define('SITE_DOMAIN', 'rumax.'.$r['baseDomain']);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
