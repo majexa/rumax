@@ -1,5 +1,8 @@
 <?php
 
+print 123;
+// ngn-daemon
+
 BasicWsServer::autoload();
 use Ratchet\Server\IoServer;
 use Ratchet\Http\HttpServer;
