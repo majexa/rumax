@@ -1,6 +1,8 @@
 <?php
 
-$id = R::get('options')['id'];
-$folder = __DIR__.'/web/captures/'.R::get('options')['folder'];
-Dir::make($folder);
-(new Image)->resizeAndSave(__DIR__.'/web/captures/'.$id.'.png', "$folder/$id.png", 340, 220);
+$opt = R::get('options');
+Arr::checkEmpty($opt, ['id', 'folder', 'n']);
+$root = __DIR__."/web/captures";
+Dir::make($root.'/'.$opt['folder']);
+(new Image)->resizeAndSave("$root/{$opt['id']}.png", "$root/{$opt['folder']}/{$opt['n']}.png", 340, 220);
+print "saved: $root/{$opt['folder']}/{$opt['n']}.png\n";
