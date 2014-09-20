@@ -1,6 +1,5 @@
 <?php
 
-print 123;
 // ngn-daemon
 
 BasicWsServer::autoload();

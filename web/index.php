@@ -47,6 +47,7 @@ define('SITE_DOMAIN', 'rumax.'.$r['baseDomain']);
   };
   Ngn.webSocketReconnect('<?= SITE_DOMAIN ?>', 9000, {
     onmessage: function(e) {
+      c(e.data);
       if (e.data.test(/capture:.*/)) {
         var capture = e.data.match(/capture:(.*)/)[1];
         document.body.addClass('loading');
