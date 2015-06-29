@@ -1,6 +1,6 @@
-# rumax
+# Rumax
 
-CasperJS realtime capture monitor
+Rumax - это CasperJS realtime capture monitor
 
 requirements: ngn
 running cmd: run rumax/wss
